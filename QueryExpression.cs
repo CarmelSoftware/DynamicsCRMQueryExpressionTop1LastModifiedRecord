@@ -25,3 +25,9 @@ Entity oLetter = null;
 
 
                 qeLastLetter.ColumnSet = columns;
+                
+                ConditionExpression conditionAssociationName = new ConditionExpression();
+                conditionAssociationName.AttributeName = "new_barcode";
+                conditionAssociationName.Operator = ConditionOperator.NotNull;
+                 
+
