@@ -29,5 +29,9 @@ Entity oLetter = null;
                 ConditionExpression conditionAssociationName = new ConditionExpression();
                 conditionAssociationName.AttributeName = "new_barcode";
                 conditionAssociationName.Operator = ConditionOperator.NotNull;
+                
+                FilterExpression filterRetrieve = new FilterExpression();
+                filterRetrieve.FilterOperator = LogicalOperator.And;
+                filterRetrieve.AddCondition(conditionAssociationName);
                  
 
