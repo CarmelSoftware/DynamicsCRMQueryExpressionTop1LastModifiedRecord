@@ -33,5 +33,7 @@ Entity oLetter = null;
                 FilterExpression filterRetrieve = new FilterExpression();
                 filterRetrieve.FilterOperator = LogicalOperator.And;
                 filterRetrieve.AddCondition(conditionAssociationName);
+                
+                qeLastLetter.Criteria = filterRetrieve;
                  
 
