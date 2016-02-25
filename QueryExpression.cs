@@ -35,5 +35,7 @@ Entity oLetter = null;
                 filterRetrieve.AddCondition(conditionAssociationName);
                 
                 qeLastLetter.Criteria = filterRetrieve;
+                
+                EntityCollection collection = service.RetrieveMultiple(qeLastLetter);
                  
 
