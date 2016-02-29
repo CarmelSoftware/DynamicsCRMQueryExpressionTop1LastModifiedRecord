@@ -37,5 +37,7 @@ Entity oLetter = null;
                 qeLastLetter.Criteria = filterRetrieve;
                 
                 EntityCollection collection = service.RetrieveMultiple(qeLastLetter);
+                
+                if (collection.Entities.Count>0)
                  
 
