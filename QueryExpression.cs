@@ -39,5 +39,7 @@ Entity oLetter = null;
                 EntityCollection collection = service.RetrieveMultiple(qeLastLetter);
                 
                 if (collection.Entities.Count>0)
-                 
+                {
+                    oLetter = collection.Entities[0];
+                }
 
